@@ -1,0 +1,145 @@
+.main_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    background-color: #e0e0e0; /* Changed background color to match other pages */
+    padding-top: 70px; /* Add padding to avoid content being hidden behind the fixed navbar */
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #28a745; /* Updated navbar color to match the theme */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 28px; /* Increased font size for better visibility */
+    margin-left: 20px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 25px; /* Increased gap for better spacing */
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Increased font size for better visibility */
+    transition: color 0.3s; /* Added transition for hover effect */
+}
+
+.nav_link:hover {
+    color: #f5f5f5; /* Change color on hover for better interaction */
+}
+
+.logout_btn {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: #f34646; /* Red background for logout button */
+    color: white; /* White text for visibility */
+    border-radius: 20px; /* Rounded corners for buttons */
+    font-weight: bold;
+    font-size: 16px; /* Increased font size for better visibility */
+    cursor: pointer;
+    margin-right: 20px; /* Space between logout button and navbar */
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.logout_btn:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+.chat_container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 70px); /* Adjust height to account for the navbar */
+    width: 100%;
+    background-color: #f0f0f0; /* Light background for chat container */
+    padding: 20px;
+}
+
+.chat_window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: white; /* White background for chat window */
+    border-radius: 10px; /* Rounded corners for chat window */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+}
+
+.bot_message {
+    background-color: #e0e0e0; /* Light background for bot messages */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for bot messages */
+    margin-bottom: 10px;
+    align-self: flex-start; /* Align bot messages to the start */
+    max-width: 60%; /* Limit width for bot messages */
+    word-wrap: break-word; /* Handle long text */
+    white-space: pre-wrap; /* Preserve whitespace */
+}
+
+.user_message {
+    background-color: #4caf50; /* Green background for user messages */
+    color: white; /* White text for user messages */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for user messages */
+    margin-bottom: 10px;
+    align-self: flex-end; /* Align user messages to the end */
+    max-width: 60%; /* Limit width for user messages */
+    word-wrap: break-word; /* Handle long text */
+}
+.white_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 25px; /* Increased border radius for a softer look */
+    width: 140px; /* Increased width for better usability */
+    font-weight: bold;
+    font-size: 16px; /* Increased font size for better visibility */
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.white_btn:hover {
+    background-color: #f0f0f0; /* Change background on hover for better interaction */
+}
+.input_container {
+    display: flex;
+    padding: 10px;
+    background-color: white; /* White background for input container */
+    border-top: 1px solid #ccc; /* Top border for separation */
+}
+
+.input {
+    flex: 1; /* Take available space */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners for input */
+}
+
+.send_button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background for send button */
+    color: white; /* White text for send button */
+    border: none;
+    border-radius: 5px; /* Rounded corners for send button */
+    cursor: pointer;
+    margin-left: 10px; /* Space between input and button */
+}
